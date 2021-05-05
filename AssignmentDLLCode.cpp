@@ -129,18 +129,20 @@ int main(){
 	DeleteAtEnd(&head);
 	DeleteAtBegin(&head);
 	InsertAtBegin(&head,12);
-	
-	node *location1 = Search(head,1231);
+	InsertAtBegin(&head,983);
+	int n = 1231;
+	node *location1 = Search(head,n);
 	if(location1==NULL){
-		cout<<"Not Found\n";
+		cout<<n<<" Not Found\n";
 	}else{
-		cout<<"Found\n";
+		cout<<n<<" Found\n";
 	}
-	location1 = Search(head,398);
+	n = 398;
+	location1 = Search(head,n);
 	if(location1==NULL){
-		cout<<"Not Found\n";
+		cout<<n<<" Not Found\n";
 	}else{
-		cout<<"Found\n";
+		cout<<n<<" Found\n";
 	}
 	Display(head);
 			
